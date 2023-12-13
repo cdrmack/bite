@@ -1,0 +1,14 @@
+=-a= - analysis - convert design units (VHDL sources) to an internal representation
+#+begin_src shell
+  ghdl -a HelloWorld.vhdl
+#+end_src
+
+=-e= - elaboration - generate executable machine code for a target module (top-level entity)
+#+begin_src shell
+  ghdl -e hello_world
+#+end_src
+
+=-r= - run - execute the design to test the behaviour, generate output/waveforms
+#+begin_src shell
+  ghdl -r hello_world
+#+end_src
