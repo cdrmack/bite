@@ -1,20 +1,20 @@
-=-a= - analysis - convert design units (VHDL sources) to an internal representation
+=-a= (analysis) - convert design units (VHDL sources) to an internal representation
 #+begin_src shell
   ghdl -a anot_tb.vhdl
 #+end_src
 
-=-e= - elaboration - generate executable machine code for a target module (top-level entity)
+=-e= (elaboration) - generate executable machine code for a target module (top-level entity)
 #+begin_src shell
   ghdl -e anot_tb
 #+end_src
 
-=-r= - run - execute the design to test the behaviour, generate output/waveforms
+=-r= (run) - execute the design to test the behaviour, generate output/waveforms
 #+begin_src shell
   ghdl -r anot_tb
 #+end_src
 
-Run and export the wavefile for analysis.
-=VCD= (Value Change Dump) is a file format defined by the verilog standard.
+Export the wavefile for further analysis.
+=VCD= (Value Change Dump) is a file format defined by the Verilog standard.
 #+begin_src shell
   ./anot_tb --vcd=result.vcd
   gtkwave result.vcd
