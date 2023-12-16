@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity aand is
+entity band is
   port(
     i0 : in std_logic;
     i1 : in std_logic;
     o0 : out std_logic
     );
-end aand;
+end band;
 
-architecture behav of aand is
+architecture behav of band is
   signal i0_nand_i1 : std_logic;
 begin
   i0_nand_i1 <= i0 nand i1;
